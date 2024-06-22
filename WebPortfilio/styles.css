@@ -1,0 +1,394 @@
+/* Overall/All Pages */
+
+.body {
+    background-color: gray;
+}
+
+.header {
+    font-family: 'Times New Roman';
+}
+
+.navbar-nav {
+    border: 2px solid black;
+}
+
+.container-fluid {
+    background-color: darkgray;
+}
+
+.pagetitle {
+    font-family: 'Times New Roman';
+    text-align: center;
+}
+
+/* About Me/Index Page */
+
+.intro {
+    text-align: center;
+}
+
+.me {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1101px) {
+    .intro {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 929px) {
+    .intro {
+        font-size: 18px;
+    }
+
+    .me {
+        height: 300px;
+        width: 250px;
+    }
+}
+
+@media (max-width: 836px) {
+    .intro {
+        font-size: 16px;
+    }
+
+    .me {
+        height: 250px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 743px) {
+    .intro {
+        font-size: 14px;
+    }
+
+    .me {
+        height: 225px;
+        width: 175px;
+    }
+}
+
+@media (max-width: 650px) {
+    .intro {
+        font-size: 12px;
+    }
+
+    .me {
+        height: 175px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 557px) {
+    .intro {
+        font-size: 10px;
+    }
+
+    .me {
+        height: 150px;
+        width: 125px;
+    }
+}
+
+@media (max-width: 465px) {
+    .intro {
+        font-size: 8px;
+    }
+
+    .me {
+        height: 125px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 372px) {
+    .intro {
+        font-size: 7px;
+    }
+
+    .me {
+        height: 100px;
+        width: 75px;
+    }
+}
+
+/* Resume Page */
+
+.resumepage {
+    margin: 10px;
+}
+
+.awd1115 {
+    text-indent: 113px
+}
+
+.south {
+    border: 2px solid black;
+}
+
+.ranken {
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.pirrones {
+    border: 2px solid black;
+}
+
+@media (max-width: 1154px) {
+    .workstatus  {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 876px) {
+    .workstatus  {
+        font-size: 16px;
+    }
+
+    .south {
+        height: 175px;
+        width: 175px;
+    }
+
+    .ranken {
+        height: 125px;
+        width: 475px;
+    }
+
+    .pirrones {
+        height: 175px;
+        width: 175px;
+    }
+}
+
+@media (max-width: 781px) {
+    .workstatus  {
+        font-size: 14px;
+    }
+
+    .south {
+        height: 150px;
+        width: 150px;
+    }
+
+    .ranken {
+        height: 125px;
+        width: 450px;
+    }
+
+    .pirrones {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 685px) {
+    .workstatus  {
+        font-size: 12px;
+    }
+
+    ul li {
+        font-size: 14px;
+    }
+
+    .awd1115 {
+        text-indent: 100px
+    }
+
+    .south {
+        height: 125px;
+        width: 125px;
+    }
+
+    .ranken {
+        height: 100px;
+        width: 425px;
+    }
+
+    .pirrones {
+        height: 125px;
+        width: 125px;
+    }
+}
+
+@media (max-width: 591px) {
+    .workstatus  {
+        font-size: 10px;
+    }
+
+    ul li {
+        font-size: 12px;
+    }
+
+    .awd1115 {
+        text-indent: 85px
+    }
+
+    .south {
+        height: 100px;
+        width: 100px;
+    }
+
+    .ranken {
+        height: 100px;
+        width: 400px;
+    }
+
+    .pirrones {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 495px) {
+    .workstatus  {
+        font-size: 8px;
+    }
+
+    ul li {
+        font-size: 10px;
+    }
+
+    .awd1115 {
+        text-indent: 70px
+    }
+
+    .south {
+        height: 75px;
+        width: 75px;
+    }
+
+    .ranken {
+        height: 75px;
+        width: 350px;
+    }
+
+    .pirrones {
+        height: 75px;
+        width: 75px;
+    }
+}
+
+@media (max-width: 401px) {
+    .workstatus  {
+        font-size: 6px;
+    }
+
+    ul li {
+        font-size: 8px;
+    }
+
+    .awd1115 {
+        text-indent: 56px
+    }
+
+    .south {
+        height: 50px;
+        width: 50px;
+    }
+
+    .ranken {
+        height: 50px;
+        width: 300px;
+    }
+
+    .pirrones {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+/* Contact Page */
+
+.contactpage {
+    text-align: center;
+}
+
+.email {
+    border: 2px solid black;
+}
+
+.phone {
+    border: 2px solid black;
+}
+
+/* Coursework Page */
+
+.courseworkpage {
+    margin: 10px;
+}
+
+@media (max-width: 498px) {
+    .course {
+        font-size: 16px;
+    }
+
+    ul > .csharpwork {
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 369px) {
+    .course {
+        font-size: 14px;
+    }
+}
+
+/* Portfolio Page */
+
+.mywork {
+    text-align: center;
+}
+
+@media (max-width: 1012px) {
+    .mywork {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 864px) {
+    .mywork {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 777px) {
+    .mywork {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 691px) {
+    .mywork {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 605px) {
+    .mywork {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 521px) {
+    .mywork {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 432px) {
+    .mywork {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 346px) {
+    .mywork {
+        font-size: 6px;
+    }
+}
