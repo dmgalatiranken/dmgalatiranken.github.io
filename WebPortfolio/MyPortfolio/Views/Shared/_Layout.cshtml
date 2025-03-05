@@ -10,6 +10,11 @@
 </head>
 <body>
     <header>
+        @{
+            string currentArea = ViewContext.RouteData.Values["area"]?.ToString() ?? "";
+            string currentController = ViewContext.RouteData.Values["controller"]?.ToString() ?? "";
+            string currentAction = ViewContext.RouteData.Values["action"]?.ToString() ?? "";
+        }
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">MyPortfolio</a>
@@ -19,11 +24,21 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        <li class="nav-item @(currentArea == "" && currentController == "Home" && currentAction == "Index" ? "active" : "")">
+                            <a class="nav-link @(currentArea == "" && currentController == "Home" && currentAction == "Index" ? "active" : "")"
+                               asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        <li class="nav-item @(currentArea == "" && currentController == "Home" && currentAction == "Projects" ? "active" : "")">
+                            <a class="nav-link @(currentArea == "" && currentController == "Home" && currentAction == "Projects" ? "active" : "")"
+                               asp-area="" asp-controller="Home" asp-action="Projects">Projects</a>
+                        </li>
+                        <li class="nav-item @(currentArea == "" && currentController == "Home" && currentAction == "AboutMe" ? "active" : "")">
+                            <a class="nav-link @(currentArea == "" && currentController == "Home" && currentAction == "AboutMe" ? "active" : "")"
+                               asp-area="" asp-controller="Home" asp-action="AboutMe">About Me</a>
+                        </li>
+                        <li class="nav-item @(currentArea == "" && currentController == "Home" && currentAction == "Contact" ? "active" : "")">
+                            <a class="nav-link @(currentArea == "" && currentController == "Home" && currentAction == "Contact" ? "active" : "")"
+                               asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
                         </li>
                     </ul>
                 </div>
